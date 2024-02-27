@@ -1,0 +1,21 @@
+site_name: WisH-Where is Home
+edit_name: "Project website"
+edit_url: "https://whereishome.netlify.app/"
+repo_name: "GitHub"
+repo_url: "https://github.com/Wish-Where-is-Home"
+
+theme:
+  name: null
+  custom_dir: 'whereishome'
+  colorscheme: dracula
+  disable_nav_search: true
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+
+
