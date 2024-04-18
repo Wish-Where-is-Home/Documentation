@@ -56,7 +56,7 @@ Lack of familiarity with the area can make it difficult to assess the quality of
 ### Use Cases
 Our use cases can be described through the following diagram:
 
-![Use Cases](img/UseCases.png)
+![Use Cases](img/UseCases_bloco1.png)
 
 <br>
 
@@ -85,7 +85,7 @@ Our use cases can be described through the following diagram:
 
 The domain model for our system is represented in the following diagram:
 
-![Domain Model](img/DomainModel.png)
+![Domain Model](img/WisH-DomainModel.png)
 
 <br>
 
@@ -93,7 +93,15 @@ The domain model for our system is represented in the following diagram:
 
 The "WisH: Where is Home" platform architecture is divided into several interconnected components, ensuring a robust, scalable, and secure real estate solution. Below is an overview of each component's purpose and functionality within the system.
 
-![System Architecture](img/system_architecture.png)
+![System Architecture](img/WisH-Architecture.png)
+
+<br>
+
+## Deployment Architecture
+
+The "WisH: Where is Home" platform deployment diagram illustrates the physical setup of the system. It features a Virtual Machine hosting Docker containers, facilitating modular and efficient application deployment. NGINX serves as a reverse proxy, managing communication between Docker containers and external entities like users and data managers. This setup ensures scalability, flexibility, and robustness in our system architecture.
+
+![System Architecture](img/WisH-DeployDiagram.png)
 
 <br>
 
@@ -126,9 +134,6 @@ The sources for spatial data include:
 
 These sources are critical for the platform as they provide the necessary geographic data that forms the foundation of the property listings and analytics offered by WisH.
 
-### Deployment
-
-While the deployment architecture specifics are not provided, Docker is indicated as the containerization platform used, which suggests a microservices-oriented architecture. The deployment strategy should ensure the system components are adequately scaled and secured, providing high availability and reliability for end-users.
 
 ### Integration
 
