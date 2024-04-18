@@ -89,7 +89,7 @@ The domain model for our system is represented in the following diagram:
 
 <br>
 
-## System Architecture
+### System Architecture
 
 The "WisH: Where is Home" platform architecture is divided into several interconnected components, ensuring a robust, scalable, and secure real estate solution. Below is an overview of each component's purpose and functionality within the system.
 
@@ -97,7 +97,7 @@ The "WisH: Where is Home" platform architecture is divided into several intercon
 
 <br>
 
-## Deployment Architecture
+### Deployment Architecture
 
 The "WisH: Where is Home" platform deployment diagram illustrates the physical setup of the system. It features a Virtual Machine hosting Docker containers, facilitating modular and efficient application deployment. NGINX serves as a reverse proxy, managing communication between Docker containers and external entities like users and data managers. This setup ensures scalability, flexibility, and robustness in our system architecture.
 
