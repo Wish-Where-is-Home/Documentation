@@ -79,8 +79,6 @@ Our use cases can be described through the following diagram:
 - **Ease of Maintenance:** The system should be modular and well-documented, facilitating ongoing maintenance and updates.
 
 
-## System Architecture
-
 ### Domain Model
 
 The domain model for our system is represented in the following diagram:
@@ -97,13 +95,6 @@ The "WisH: Where is Home" platform architecture is divided into several intercon
 
 <br>
 
-### Deployment Architecture
-
-The "WisH: Where is Home" platform deployment diagram illustrates the physical setup of the system. It features a Virtual Machine hosting Docker containers, facilitating modular and efficient application deployment. NGINX serves as a reverse proxy, managing communication between Docker containers and external entities like users and data managers. This setup ensures scalability, flexibility, and robustness in our system architecture.
-
-![System Architecture](img/WisH-DeployDiagram.png)
-
-<br>
 
 ### Presentation Layer
 
@@ -140,3 +131,11 @@ These sources are critical for the platform as they provide the necessary geogra
 Each component is designed to work in tandem, providing a seamless user experience. The Presentation Layer communicates with the Backend to render dynamic content, while the Backend interfaces with the Storage to retrieve and store data. GeoServer and QGIS act as essential intermediaries for processing and visualizing geospatial data.
 
 By utilizing modern frameworks, databases, and standards, the WisH platform ensures a state-of-the-art system architecture that is well-equipped to meet the demands of today's real estate market.
+
+## Deployment Architecture
+
+The "WisH: Where is Home" platform deployment diagram illustrates the physical setup of the system. It features a Virtual Machine hosting Docker containers, facilitating modular and efficient application deployment. NGINX serves as a reverse proxy, managing communication between Docker containers and external entities like users and data managers. This setup ensures scalability, flexibility, and robustness in our system architecture.
+
+![System Architecture](img/WisH-DeployDiagram.png)
+
+<br>
