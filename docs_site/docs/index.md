@@ -84,7 +84,7 @@ Priority: High
 After the different areas are colored with the color gradient, the user should be able to select any area on the map. He can also access the list of properties available in that area and obtain more detailed information about each of them. <br>
 Priority: Medium
 
-#### Owner of a Property**
+#### Owner of a Property
 
 - **Add Houses**<br>
 The owner of a house must be able to add new houses to our system, which can later be denied or accepted and presented to users of our website. <br>
