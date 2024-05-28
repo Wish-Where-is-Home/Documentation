@@ -42,6 +42,11 @@ Lack of familiarity with the area can make it difficult to assess the quality of
 - **Add Property Details:** Enables sellers to provide details about their properties.
 - **Upload Photos and Videos:** Sellers can upload visual content for their properties.
 
+#### ADMIN Account
+- **Login/Register Process:** Allows administrators to create and log in to their account.
+- **Approve/Deny Properties:** Administrators can review and approve/deny properties listed by sellers.
+- **Provide Feedback:** Administrators can provide feedback to sellers regarding property listings.
+
 #### Customer Interaction
 - **Interact/Filter Using Evaluation Metrics:** Customers can use various metrics to filter and select properties.
 - **View Results Based on Metrics:** The platform displays properties based on the selected metrics.
@@ -51,6 +56,7 @@ Lack of familiarity with the area can make it difficult to assess the quality of
 #### Actors
 - **Customer**
 - **Seller**
+- **Administrator**
 
 
 ### Use Cases
@@ -58,6 +64,54 @@ Our use cases can be described through the following diagram:
 
 ![Use Cases](img/UseCases_bloco1.png)
 
+
+
+**Client**
+
+- Search Map
+Allow the user to search for different areas on the map, whether nationally, municipally, parish or subsection of each parish.
+Priority: High
+
+- Adjust Criteria/Preferences
+Allow the user to change each of the metrics/themes present on our website, and if logged in to the system, they can save these metrics for future research. 
+Priority: High
+
+- See Personalized Best & Worst Areas
+Allow the user, when changing different metrics, to view a color gradient on the map that goes from red to green. Red indicates the worst areas and green the best, thus coloring each area according to the metrics provided by the user. 
+Priority: High
+
+- Select an area and see available properties
+After the different areas are colored with the color gradient, the user should be able to select any area on the map. He can also access the list of properties available in that area and obtain more detailed information about each of them. 
+Priority: Medium
+
+**Owner of a Property**
+
+- Add Houses
+The owner of a house must be able to add new houses to our system, which can later be denied or accepted and presented to users of our website. 
+Priority: Low
+
+- Add physical details about house
+When adding a house, the property owner should be able to add all the information about the house, from basic information regarding the house, such as images of the rooms and the property. 
+Priority: Low
+
+- Change house state
+If the house is present in our system, the owner must be able to change the information regarding the house, which will again go through a validation process by the administrator, and must also be able to change the status of the house, in the case of rental or sale. 
+Priority: Low
+
+
+**Administrator**
+
+- Approve properties/bedrooms
+The administrator must be able to access all the information regarding each house and rooms and, after a validation process, can approve the house. 
+Priority: Low
+
+- Deny properties/bedrooms
+In addition to approving homes, the administrator must have the ability to deny a home. 
+Priority: Low
+
+- Give feedback on why it has been denied
+If you deny a property/room, you must provide a detailed explanation of the reason, allowing the owner to make the necessary changes for the house to be approved. 
+Priority: Low
 <br>
 
 ## Non-Functional Requirements

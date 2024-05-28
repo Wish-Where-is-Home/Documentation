@@ -88,12 +88,44 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#about-our-project">About our project</a></li>
-            <li class="second-level"><a href="#context-and-motivation">Context: Problem and Motivation</a></li>
+            <li class="second-level"><a href="#context-and-motivation">Context and motivation</a></li>
                 
             <li class="second-level"><a href="#what-is-wish">What is WisH?</a></li>
                 
             <li class="second-level"><a href="#objectives">Objectives</a></li>
                 
+        <li class="first-level "><a href="#functional-requirements">Functional Requirements</a></li>
+            <li class="second-level"><a href="#list-of-features">List of Features</a></li>
+                
+                <li class="third-level"><a href="#customer-account">Customer Account</a></li>
+                <li class="third-level"><a href="#seller-account">Seller Account</a></li>
+                <li class="third-level"><a href="#admin-account">ADMIN Account</a></li>
+                <li class="third-level"><a href="#customer-interaction">Customer Interaction</a></li>
+                <li class="third-level"><a href="#actors">Actors</a></li>
+            <li class="second-level"><a href="#use-cases">Use Cases</a></li>
+                
+        <li class="first-level "><a href="#non-functional-requirements">Non-Functional Requirements</a></li>
+            <li class="second-level"><a href="#use-of-standards">Use of Standards</a></li>
+                
+                <li class="third-level"><a href="#performance">Performance</a></li>
+                <li class="third-level"><a href="#security">Security</a></li>
+                <li class="third-level"><a href="#usability">Usability</a></li>
+                <li class="third-level"><a href="#maintainability">Maintainability</a></li>
+            <li class="second-level"><a href="#domain-model">Domain Model</a></li>
+                
+            <li class="second-level"><a href="#system-architecture">System Architecture</a></li>
+                
+            <li class="second-level"><a href="#presentation-layer">Presentation Layer</a></li>
+                
+            <li class="second-level"><a href="#backend">Backend</a></li>
+                
+            <li class="second-level"><a href="#storage">Storage</a></li>
+                
+            <li class="second-level"><a href="#data-loader">Data Loader</a></li>
+                
+            <li class="second-level"><a href="#integration">Integration</a></li>
+                
+        <li class="first-level "><a href="#deployment-architecture">Deployment Architecture</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -117,9 +149,158 @@
 <p>The main objective of <strong>WisH</strong> is to provide a personalized and innovative real estate research platform, which allows users to explore areas of interest based on metrics relevant to their lifestyle, such as Walk Score, Transit Score, and others, allowing the customers to find the best place to live according to their preferences.</p>
 </li>
 <li>
-<p>To reach potential customers, based on their preferences.</p>
+<p>Provide a platform to real state agents to promote their properties, and to reach potential customers, based on their preferences.</p>
 </li>
-</ul></div>
+</ul>
+<p><br></p>
+<h2 id="functional-requirements">Functional Requirements<a class="headerlink" href="#functional-requirements" title="Permanent link">&para;</a></h2>
+<h3 id="list-of-features">List of Features<a class="headerlink" href="#list-of-features" title="Permanent link">&para;</a></h3>
+<h4 id="customer-account">Customer Account<a class="headerlink" href="#customer-account" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Login/Register Process:</strong> Allows customers to create and log in to their account.</li>
+<li><strong>Manage Account Details:</strong> Customers can update their personal information as needed.</li>
+<li><strong>Manage Personal Preferences:</strong> Enables customers to set preferences such as metrics and aspects of importance to them.</li>
+</ul>
+<h4 id="seller-account">Seller Account<a class="headerlink" href="#seller-account" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Login/Register Process:</strong> Allows sellers to create and log in to their account.</li>
+<li><strong>List Properties for Sale:</strong> Sellers can list their properties on the platform.</li>
+<li><strong>Add Property Details:</strong> Enables sellers to provide details about their properties.</li>
+<li><strong>Upload Photos and Videos:</strong> Sellers can upload visual content for their properties.</li>
+</ul>
+<h4 id="admin-account">ADMIN Account<a class="headerlink" href="#admin-account" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Login/Register Process:</strong> Allows administrators to create and log in to their account.</li>
+<li><strong>Approve/Deny Properties:</strong> Administrators can review and approve/deny properties listed by sellers.</li>
+<li><strong>Provide Feedback:</strong> Administrators can provide feedback to sellers regarding property listings.</li>
+</ul>
+<h4 id="customer-interaction">Customer Interaction<a class="headerlink" href="#customer-interaction" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Interact/Filter Using Evaluation Metrics:</strong> Customers can use various metrics to filter and select properties.</li>
+<li><strong>View Results Based on Metrics:</strong> The platform displays properties based on the selected metrics.</li>
+<li><strong>Feedback:</strong> Customers can provide feedback on their experience.</li>
+<li><strong>Customer Support:</strong> Support is available for customer queries and issues.</li>
+</ul>
+<h4 id="actors">Actors<a class="headerlink" href="#actors" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Customer</strong></li>
+<li><strong>Seller</strong></li>
+<li><strong>Administrator</strong></li>
+</ul>
+<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
+<p>Our use cases can be described through the following diagram:</p>
+<p><img alt="Use Cases" src="img/UseCases_bloco1.png" /></p>
+<p><strong>Client</strong></p>
+<ul>
+<li>
+<p>Search Map
+Allow the user to search for different areas on the map, whether nationally, municipally, parish or subsection of each parish.
+Priority: High</p>
+</li>
+<li>
+<p>Adjust Criteria/Preferences
+Allow the user to change each of the metrics/themes present on our website, and if logged in to the system, they can save these metrics for future research. 
+Priority: High</p>
+</li>
+<li>
+<p>See Personalized Best &amp; Worst Areas
+Allow the user, when changing different metrics, to view a color gradient on the map that goes from red to green. Red indicates the worst areas and green the best, thus coloring each area according to the metrics provided by the user. 
+Priority: High</p>
+</li>
+<li>
+<p>Select an area and see available properties
+After the different areas are colored with the color gradient, the user should be able to select any area on the map. He can also access the list of properties available in that area and obtain more detailed information about each of them. 
+Priority: Medium</p>
+</li>
+</ul>
+<p><strong>Owner of a Property</strong></p>
+<ul>
+<li>
+<p>Add Houses
+The owner of a house must be able to add new houses to our system, which can later be denied or accepted and presented to users of our website. 
+Priority: Low</p>
+</li>
+<li>
+<p>Add physical details about house
+When adding a house, the property owner should be able to add all the information about the house, from basic information regarding the house, such as images of the rooms and the property. 
+Priority: Low</p>
+</li>
+<li>
+<p>Change house state
+If the house is present in our system, the owner must be able to change the information regarding the house, which will again go through a validation process by the administrator, and must also be able to change the status of the house, in the case of rental or sale. 
+Priority: Low</p>
+</li>
+</ul>
+<p><strong>Administrator</strong></p>
+<ul>
+<li>
+<p>Approve properties/bedrooms
+The administrator must be able to access all the information regarding each house and rooms and, after a validation process, can approve the house. 
+Priority: Low</p>
+</li>
+<li>
+<p>Deny properties/bedrooms
+In addition to approving homes, the administrator must have the ability to deny a home. 
+Priority: Low</p>
+</li>
+<li>
+<p>Give feedback on why it has been denied
+If you deny a property/room, you must provide a detailed explanation of the reason, allowing the owner to make the necessary changes for the house to be approved. 
+Priority: Low
+<br></p>
+</li>
+</ul>
+<h2 id="non-functional-requirements">Non-Functional Requirements<a class="headerlink" href="#non-functional-requirements" title="Permanent link">&para;</a></h2>
+<h3 id="use-of-standards">Use of Standards<a class="headerlink" href="#use-of-standards" title="Permanent link">&para;</a></h3>
+<h4 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Response Time:</strong> The system should respond to user requests within a short period of time.</li>
+<li><strong>Scalability:</strong> The system must be capable of handling an increase in the number of users without significant degradation of performance.</li>
+</ul>
+<h4 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Authentication and Authorization:</strong> The system should require authentication to access protected areas and ensure that only authorized users can perform certain actions (e.g., Listing Properties for Sale).</li>
+<li><strong>Data Protection:</strong> The system must adhere to data security standards and privacy regulations, ensuring proper protection of user information.</li>
+</ul>
+<h4 id="usability">Usability<a class="headerlink" href="#usability" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Ease of Use:</strong> The system should be intuitive and easy to use, even for inexperienced users.</li>
+</ul>
+<h4 id="maintainability">Maintainability<a class="headerlink" href="#maintainability" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Ease of Maintenance:</strong> The system should be modular and well-documented, facilitating ongoing maintenance and updates.</li>
+</ul>
+<h3 id="domain-model">Domain Model<a class="headerlink" href="#domain-model" title="Permanent link">&para;</a></h3>
+<p>The domain model for our system is represented in the following diagram:</p>
+<p><img alt="Domain Model" src="img/WisH-DomainModel.png" /></p>
+<p><br></p>
+<h3 id="system-architecture">System Architecture<a class="headerlink" href="#system-architecture" title="Permanent link">&para;</a></h3>
+<p>The "WisH: Where is Home" platform architecture is divided into several interconnected components, ensuring a robust, scalable, and secure real estate solution. Below is an overview of each component's purpose and functionality within the system.</p>
+<p><img alt="System Architecture" src="img/WisH-Architecture.png" /></p>
+<p><br></p>
+<h3 id="presentation-layer">Presentation Layer<a class="headerlink" href="#presentation-layer" title="Permanent link">&para;</a></h3>
+<p>The Presentation Layer consists of a web application developed using React, a modern JavaScript library for building user interfaces. Additionally, Leaflet, a leading open-source JavaScript library for mobile-friendly interactive maps, is utilized to provide map-based functionalities to users.</p>
+<p>The React framework facilitates component-based development, offering a modular approach that is easy to test, read, and maintain. The inclusion of Leaflet allows for the integration of sophisticated map features, enhancing the user experience by allowing them to visually interact with property locations.</p>
+<h3 id="backend">Backend<a class="headerlink" href="#backend" title="Permanent link">&para;</a></h3>
+<p>The Backend of the platform is powered by Django, a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Django serves as the API provider, processing business logic and interfacing with both the Presentation Layer and Storage components.</p>
+<p>In conjunction with Django, the system utilizes GeoServer, an open-source server written in Java that allows users to share, process, and edit geospatial data. Running on Docker for easy deployment and isolation, GeoServer acts as middleware, facilitating the manipulation of spatial data.</p>
+<h3 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h3>
+<p>The Storage component is composed of both relational and spatial databases. PostgreSQL, an advanced open-source relational database, provides robust data storage, processing, and integrity.</p>
+<p>Extended by PostGIS, a spatial database extender for PostgreSQL, the system gains the ability to handle geographic objects, allowing for complex spatial queries and data types, essential for real estate data analysis.</p>
+<h3 id="data-loader">Data Loader<a class="headerlink" href="#data-loader" title="Permanent link">&para;</a></h3>
+<p>A Data Loader component, which includes a Data Processor, is responsible for handling and processing data from various sources. The system uses QGIS, an open-source geographic information system, to process and integrate spatial data.</p>
+<p>The sources for spatial data include:
+- Instituto Nacional Estatística (INE), providing official statistical information.
+- GeoFabrick, offering open-source mapping data.
+- OpenStreetMap (OSM), a collaborative project to create a free editable map of the world.</p>
+<p>These sources are critical for the platform as they provide the necessary geographic data that forms the foundation of the property listings and analytics offered by WisH.</p>
+<h3 id="integration">Integration<a class="headerlink" href="#integration" title="Permanent link">&para;</a></h3>
+<p>Each component is designed to work in tandem, providing a seamless user experience. The Presentation Layer communicates with the Backend to render dynamic content, while the Backend interfaces with the Storage to retrieve and store data. GeoServer and QGIS act as essential intermediaries for processing and visualizing geospatial data.</p>
+<p>By utilizing modern frameworks, databases, and standards, the WisH platform ensures a state-of-the-art system architecture that is well-equipped to meet the demands of today's real estate market.</p>
+<h2 id="deployment-architecture">Deployment Architecture<a class="headerlink" href="#deployment-architecture" title="Permanent link">&para;</a></h2>
+<p>The "WisH: Where is Home" platform deployment diagram illustrates the physical setup of the system. It features a Virtual Machine hosting Docker containers, facilitating modular and efficient application deployment. NGINX serves as a reverse proxy, managing communication between Docker containers and external entities like users and data managers. This setup ensures scalability, flexibility, and robustness in our system architecture.</p>
+<p><img alt="System Architecture" src="img/WisH-DeployDiagram.png" /></p>
+<p><br></p></div>
         
         
     </div>
@@ -224,5 +405,5 @@
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-02-27 16:40:07.731076+00:00
+Build Date UTC : 2024-05-28 23:27:44.671358+00:00
 -->
