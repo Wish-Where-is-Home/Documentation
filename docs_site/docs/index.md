@@ -66,51 +66,51 @@ Our use cases can be described through the following diagram:
 
 
 
-**Client**
+#### Client
 
-- Search Map
-Allow the user to search for different areas on the map, whether nationally, municipally, parish or subsection of each parish.
+- **Search Map**<br>
+Allow the user to search for different areas on the map, whether nationally, municipally, parish or subsection of each parish.<br>
 Priority: High
 
-- Adjust Criteria/Preferences
-Allow the user to change each of the metrics/themes present on our website, and if logged in to the system, they can save these metrics for future research. 
+- **Adjust Criteria/Preferences**<br>
+Allow the user to change each of the metrics/themes present on our website, and if logged in to the system, they can save these metrics for future research. <br>
 Priority: High
 
-- See Personalized Best & Worst Areas
-Allow the user, when changing different metrics, to view a color gradient on the map that goes from red to green. Red indicates the worst areas and green the best, thus coloring each area according to the metrics provided by the user. 
+- **See Personalized Best & Worst Areas**<br>
+Allow the user, when changing different metrics, to view a color gradient on the map that goes from red to green. Red indicates the worst areas and green the best, thus coloring each area according to the metrics provided by the user. <br>
 Priority: High
 
-- Select an area and see available properties
-After the different areas are colored with the color gradient, the user should be able to select any area on the map. He can also access the list of properties available in that area and obtain more detailed information about each of them. 
+- **Select an area and see available properties**<br>
+After the different areas are colored with the color gradient, the user should be able to select any area on the map. He can also access the list of properties available in that area and obtain more detailed information about each of them. <br>
 Priority: Medium
 
-**Owner of a Property**
+#### Owner of a Property**
 
-- Add Houses
-The owner of a house must be able to add new houses to our system, which can later be denied or accepted and presented to users of our website. 
+- **Add Houses**<br>
+The owner of a house must be able to add new houses to our system, which can later be denied or accepted and presented to users of our website. <br>
 Priority: Low
 
-- Add physical details about house
-When adding a house, the property owner should be able to add all the information about the house, from basic information regarding the house, such as images of the rooms and the property. 
+- **Add physical details about house**<br>
+When adding a house, the property owner should be able to add all the information about the house, from basic information regarding the house, such as images of the rooms and the property. <br>
 Priority: Low
 
-- Change house state
-If the house is present in our system, the owner must be able to change the information regarding the house, which will again go through a validation process by the administrator, and must also be able to change the status of the house, in the case of rental or sale. 
+- **Change house state** <br>
+If the house is present in our system, the owner must be able to change the information regarding the house, which will again go through a validation process by the administrator, and must also be able to change the status of the house, in the case of rental or sale. <br>
 Priority: Low
 
 
-**Administrator**
+#### Administrator
 
-- Approve properties/bedrooms
-The administrator must be able to access all the information regarding each house and rooms and, after a validation process, can approve the house. 
+- **Approve properties/bedrooms**<br>
+The administrator must be able to access all the information regarding each house and rooms and, after a validation process, can approve the house. <br>
 Priority: Low
 
-- Deny properties/bedrooms
-In addition to approving homes, the administrator must have the ability to deny a home. 
+- **Deny properties/bedrooms**<br>
+In addition to approving homes, the administrator must have the ability to deny a home. <br>
 Priority: Low
 
-- Give feedback on why it has been denied
-If you deny a property/room, you must provide a detailed explanation of the reason, allowing the owner to make the necessary changes for the house to be approved. 
+- **Give feedback on why it has been denied**<br>
+If you deny a property/room, you must provide a detailed explanation of the reason, allowing the owner to make the necessary changes for the house to be approved. <br>
 Priority: Low
 <br>
 
